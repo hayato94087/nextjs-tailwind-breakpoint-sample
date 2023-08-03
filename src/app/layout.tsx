@@ -1,4 +1,5 @@
-import '@/styles/globals.css'
+import { TailwindIndicator } from "@/components/tailwind-indicator";
+import "@/styles/globals.css";
 
 export const metadata = {
   title: "Create Next App",
@@ -12,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ja">
-      <body className="">{children}</body>
+      <body className="">
+        {children}
+        <TailwindIndicator />
+      </body>
     </html>
   );
 }
